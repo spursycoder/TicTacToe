@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
     <script src="./index.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <title>Tic-Tac-Toe</title>
 </head>
 <body>
@@ -49,12 +55,16 @@
             <img src="./img/o.png" alt="O" id="9-O" class="O entry" style="visibility:hidden">
         </div>
     </div>
-    <img src="./img/reset.png" alt="reset button" id="reset" onclick="reload()">
-
+    <div class="below-container">
+        <div><img src="./img/reset.png" alt="reset button" id="reset" onclick="reload()"></div>
+        <div id="counter">10</div>
+    </div>
+    <div id="timeOver">Out of time :(</div>
     <div class="result">
         <img id="xWins" class="resultImage" src="./img/xWins.png" style="visibility:hidden">
         <img id="oWins" class="resultImage" src="./img/oWins.png" style="visibility:hidden">
         <img id="draw" class="resultImage" src="./img/draw.png" style="visibility:hidden">
     </div>
+    <a href="https://github.com/spursycoder/TicTacToe" target="_blank"><img src="./img/github.png" alt="github-icon" id="git-logo" ></a>
 </body>
 </html>
