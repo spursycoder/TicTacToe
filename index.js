@@ -4,14 +4,12 @@ var turn=0;
 var gameover=0;
 $("#timeOver").hide()
 function clicked(s){
-    // clearTimeout(countdown)
     if(turn>0){
-        timeLeft = 10;
+        timeLeft = 6;
     }
     else{
-        timeLeft = 10;        
+        timeLeft = 5;        
     }
-    // timeOutFunction=setTimeout(countdown, 1000);
     if (turn==0){
         setTimeout(countdown, 1000);
     }
